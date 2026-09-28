@@ -59,5 +59,5 @@ L.tileLayer(
 
 L.marker([27.994402, -81.760254])
     .addTo(map)
-    .bindPopup("FEI STU Bratislava")
+    .bindPopup("Florida, USA")
     .openPopup();
