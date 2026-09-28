@@ -6,8 +6,9 @@ const weatherUrl =
     "https://api.open-meteo.com/v1/forecast" +
     "?latitude=48.15" +
     "&longitude=17.11" +
-    "&current=temperature_2m,wind_speed_10m" +
+    "&current=temperature_2m,wind_speed_10m,precipitation_probability" +
     "&timezone=auto";
+
 
 fetch(weatherUrl)
     .then(response => response.json())
@@ -15,7 +16,7 @@ fetch(weatherUrl)
 
         const temperature = data.current.temperature_2m;
         const wind = data.current.wind_speed_10m;
-        const rain_probability = data.current.precipitation_probability_mean;
+        const rain_probability = data.current.precipitation_probability;
 
         document.getElementById("weather").innerHTML =
             "Teplota: " + temperature + " °C<br>" +
