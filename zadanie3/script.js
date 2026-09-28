@@ -61,3 +61,11 @@ L.marker([27.994402, -81.760254])
     .addTo(map)
     .bindPopup("Florida, USA")
     .openPopup();
+
+L.marker([48.151965, 17.072995])
+    .addTo(map)
+    .bindPopup("FEI STU");
+
+L.marker([48.1486, 17.1077])
+    .addTo(map)
+    .bindPopup("Bratislava");
