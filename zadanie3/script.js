@@ -15,10 +15,12 @@ fetch(weatherUrl)
 
         const temperature = data.current.temperature_2m;
         const wind = data.current.wind_speed_10m;
+        const rain_probability = data.current.precipitation_probability;
 
         document.getElementById("weather").innerHTML =
             "Teplota: " + temperature + " °C<br>" +
-            "Vietor: " + wind + " km/h";
+            "Vietor: " + wind + " km/h<br>" +
+            "Pravdepodobnosť zrážok: " + rain_probability + " %";
 
     })
     .catch(error => {
