@@ -15,7 +15,7 @@ fetch(weatherUrl)
 
         const temperature = data.current.temperature_2m;
         const wind = data.current.wind_speed_10m;
-        const rain_probability = data.current.precipitation_probability;
+        const rain_probability = data.current.precipitation_probability_mean;
 
         document.getElementById("weather").innerHTML =
             "Teplota: " + temperature + " °C<br>" +
