@@ -4,8 +4,8 @@
 
 const weatherUrl =
     "https://api.open-meteo.com/v1/forecast" +
-    "?latitude=27.99" +
-    "&longitude=-81.76" +
+    "?latitude=27.994402" +
+    "&longitude=-81.760254" +
     "&current=temperature_2m,wind_speed_10m,precipitation_probability" +
     "&timezone=auto";
 
@@ -39,7 +39,7 @@ fetch(weatherUrl)
 // ========================================
 
 const map = L.map("map").setView(
-    [48.151965, 17.072995],
+    [27.994402, -81.760254],
     15
 );
 
