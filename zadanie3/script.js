@@ -39,7 +39,7 @@ fetch(weatherUrl)
 // ========================================
 
 const map = L.map("map").setView(
-    [27.994402, -81.760254],
+    [48.151965, 17.072995],
     15
 );
 
@@ -57,7 +57,7 @@ L.tileLayer(
 // 3. MARKER
 // ========================================
 
-L.marker([48.151965, 17.072995])
+L.marker([27.994402, -81.760254])
     .addTo(map)
     .bindPopup("FEI STU Bratislava")
     .openPopup();
