@@ -4,8 +4,8 @@
 
 const weatherUrl =
     "https://api.open-meteo.com/v1/forecast" +
-    "?latitude=48.15" +
-    "&longitude=17.11" +
+    "?latitude=27.99" +
+    "&longitude=-81.76" +
     "&current=temperature_2m,wind_speed_10m,precipitation_probability" +
     "&timezone=auto";
 
