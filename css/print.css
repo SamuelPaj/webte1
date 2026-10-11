@@ -1,0 +1,16 @@
+/* Print style: CV on one page, no navigation or decorative backgrounds */
+@media print {
+  @page { size: A4; margin: 1cm; }
+  body { background: none; color: black; font-size: 10pt; line-height: 1.4; }
+  .skip-link, .site-header, .nav, .site-footer { display: none; }
+  .container { max-width: none; padding: 0; }
+  main { padding: 0; }
+  .cv { display: block; border-radius: 0; }
+  .cv__side, .cv__main { background: none; color: black; padding: 0; margin-bottom: 0.5cm; }
+  .cv__side h2, .cv__side a, h1, h2 { color: black; }
+  .cv__side img { display: none; }
+  .bar { border: 1px solid black; background: none; }
+  .bar::-webkit-progress-bar { background: none; }
+  .bar::-webkit-progress-value { background: black; }
+  .bar::-moz-progress-bar { background: black; }
+}

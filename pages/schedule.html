@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rozvrh | Samuel Piteľ</title>
+  <meta name="description" content="Môj rozvrh od 7:00 do 21:00: zisti, kedy mám výučbu a kedy ma môžeš zastihnúť.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Rozvrh | Samuel Piteľ">
+  <meta property="og:description" content="Môj rozvrh od 7:00 do 21:00: zisti, kedy mám výučbu a kedy ma môžeš zastihnúť.">
+  <meta property="og:image" content="../img/og.png">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="stylesheet" href="../css/styles.css">
+  <script src="../js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Preskočiť na obsah</a>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <svg class="logo" viewBox="0 0 48 48" role="img" aria-label="Monogram SP"><rect class="logo__bg" width="48" height="48" rx="10"/><text class="logo__text" x="24" y="31" text-anchor="middle">SP</text></svg>
+      <div>
+        <p class="site-title">Samuel Piteľ</p>
+        <p class="site-slogan">Študent aplikovanej informatiky, mám rád keď ráno nezvoní budík</p>
+      </div>
+    </div>
+  </header>
+  <nav class="nav" aria-label="Hlavné menu">
+    <div class="container">
+      <button type="button" class="nav__toggle" aria-expanded="false" aria-controls="menu" aria-label="Menu"><span class="nav__bars" aria-hidden="true"></span></button>
+      <ul class="nav__list" id="menu">
+        <li><a class="nav__link" href="../index.html">Profil</a></li>
+        <li><a class="nav__link" href="cv.html">Životopis</a></li>
+        <li><a class="nav__link" href="workspace.html">Pracovné prostredie</a></li>
+        <li><a class="nav__link nav__link--active" href="schedule.html" aria-current="page">Rozvrh</a></li>
+        <li><a class="nav__link" href="map.html">Mapa</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main id="main" class="container">
+    <h1>Kedy ma zastihnete</h1>
+    <p id="schedule-status" class="status" aria-live="polite">Zisťujem, či práve mám výučbu…</p>
+    <h2>Môj rozvrh</h2>
+    <div class="filters" role="group" aria-label="Filter rozvrhu">
+      <button type="button" class="btn btn--active" data-filter="all" aria-pressed="true">Všetko</button>
+      <button type="button" class="btn" data-filter="lecture" aria-pressed="false">Prednášky</button>
+      <button type="button" class="btn" data-filter="exercise" aria-pressed="false">Cvičenia</button>
+      <button type="button" class="btn" data-filter="pe" aria-pressed="false">Telesná kultúra</button>
+    </div>
+    <p id="filter-empty" class="empty-message" hidden>Pre tento filter nemám v rozvrhu žiadnu hodinu.</p>
+    <div id="table-wrap" class="table-wrap">
+      <table id="schedule" class="schedule">
+        <thead><tr><th scope="col">Čas</th><th scope="col" colspan="2">Po</th><th scope="col" colspan="2">Ut</th><th scope="col" colspan="2">St</th><th scope="col" colspan="2">Št</th><th scope="col" colspan="2">Pi</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">7:00</th><td class="schedule__free" colspan="10">Voľné</td></tr>
+          <tr><th scope="row">8:00</th><td class="schedule__free" colspan="2">Voľné</td><td colspan="2" rowspan="2" data-day="2" data-start="480" data-end="590" data-type="lecture" data-subject="Analýza a zložitosť algoritmov" data-label="prednáška"><span class="schedule__meta">de300 (BA-FEI-FEI D-E)</span><span class="schedule__subject">Analýza a zložitosť algoritmov</span><span class="schedule__meta"><em>M. Bečka</em></span></td><td rowspan="2" data-day="3" data-start="480" data-end="590" data-type="lecture" data-subject="Operačné systémy" data-label="prednáška"><span class="schedule__meta">cd300 (BA-FEI-FEI C-D)</span><span class="schedule__subject">Operačné systémy</span><span class="schedule__meta"><em>M. Jókay</em></span></td><td class="schedule__free">Voľné</td><td class="schedule__free" colspan="2" rowspan="4">Voľné</td><td class="schedule__free" colspan="2">Voľné</td></tr>
+          <tr><th scope="row">9:00</th><td colspan="2" rowspan="2" data-day="1" data-start="540" data-end="650" data-type="exercise" data-subject="Webové technológie 1" data-label="cvičenie"><span class="schedule__meta">c137 (BA-FEI-FEI C)</span><span class="schedule__subject">Webové technológie 1</span><span class="schedule__meta"><em>K. Žáková</em></span></td><td rowspan="2" data-day="3" data-start="540" data-end="650" data-type="pe" data-subject="Telesná kultúra 5" data-label="telesná kultúra"><span class="schedule__meta">TML (BA-FEI-FEI TV-PL)</span><span class="schedule__subject">Telesná kultúra 5</span><span class="schedule__meta"><em>V. Pajkoš</em></span></td><td colspan="2" data-day="5" data-start="540" data-end="590" data-type="exercise" data-subject="Analýza a zložitosť algoritmov" data-label="cvičenie"><span class="schedule__meta">cd150 (BA-FEI-FEI C-D)</span><span class="schedule__subject">Analýza a zložitosť algoritmov</span><span class="schedule__meta"><em>M. Bečka</em></span></td></tr>
+          <tr><th scope="row">10:00</th><td colspan="2" rowspan="2" data-day="2" data-start="600" data-end="710" data-type="lecture" data-subject="Webové technológie 1" data-label="prednáška"><span class="schedule__meta">cd150 (BA-FEI-FEI C-D)</span><span class="schedule__subject">Webové technológie 1</span><span class="schedule__meta"><em>K. Žáková</em></span></td><td rowspan="2" data-day="3" data-start="600" data-end="710" data-type="lecture" data-subject="Analýza a zložitosť algoritmov" data-label="prednáška"><span class="schedule__meta">bc150 (BA-FEI-FEI B-C)</span><span class="schedule__subject">Analýza a zložitosť algoritmov</span><span class="schedule__meta"><em>M. Bečka</em></span></td><td class="schedule__free" colspan="2" rowspan="2">Voľné</td></tr>
+          <tr><th scope="row">11:00</th><td class="schedule__free" colspan="2">Voľné</td><td class="schedule__free">Voľné</td></tr>
+          <tr><th scope="row">12:00</th><td class="schedule__free" colspan="10">Voľné</td></tr>
+          <tr><th scope="row">13:00</th><td colspan="2" rowspan="2" data-day="1" data-start="780" data-end="890" data-type="exercise" data-subject="Operačné systémy" data-label="cvičenie"><span class="schedule__meta">cpu-e (BA-FEI-FEI D)</span><span class="schedule__subject">Operačné systémy</span><span class="schedule__meta"><em>M. Jókay</em></span></td><td colspan="2" rowspan="2" data-day="2" data-start="780" data-end="890" data-type="lecture" data-subject="Matematická štatistika" data-label="prednáška"><span class="schedule__meta">bc150 (BA-FEI-FEI B-C)</span><span class="schedule__subject">Matematická štatistika</span><span class="schedule__meta"><em>J. Kalická</em></span></td><td rowspan="2" data-day="3" data-start="780" data-end="890" data-type="lecture" data-subject="Webové technológie 1" data-label="prednáška"><span class="schedule__meta">cd150 (BA-FEI-FEI C-D)</span><span class="schedule__subject">Webové technológie 1</span><span class="schedule__meta"><em>K. Žáková</em></span></td><td rowspan="2" data-day="3" data-start="780" data-end="890" data-type="exercise" data-subject="Matematická štatistika" data-label="cvičenie"><span class="schedule__meta">c430 (BA-FEI-FEI C)</span><span class="schedule__subject">Matematická štatistika</span><span class="schedule__meta"><em>D. Pancza</em></span></td><td class="schedule__free" colspan="2" rowspan="4">Voľné</td><td class="schedule__free" colspan="2" rowspan="2">Voľné</td></tr>
+          <tr><th scope="row">14:00</th></tr>
+          <tr><th scope="row">15:00</th><td colspan="2" rowspan="2" data-day="1" data-start="900" data-end="1010" data-type="lecture" data-subject="Lineárna algebra 2" data-label="prednáška"><span class="schedule__meta">cd300 (BA-FEI-FEI C-D)</span><span class="schedule__subject">Lineárna algebra 2</span><span class="schedule__meta"><em>J. Šiagiová</em></span></td><td class="schedule__free" colspan="2" rowspan="2">Voľné</td><td class="schedule__free" colspan="2" rowspan="2">Voľné</td><td colspan="2" rowspan="2" data-day="5" data-start="900" data-end="1010" data-type="exercise" data-subject="Lineárna algebra 2" data-label="cvičenie"><span class="schedule__meta">bc35 (BA-FEI-FEI B-C)</span><span class="schedule__subject">Lineárna algebra 2</span><span class="schedule__meta"><em>D. Pancza</em></span></td></tr>
+          <tr><th scope="row">16:00</th></tr>
+          <tr><th scope="row">17:00</th><td class="schedule__free" colspan="10" rowspan="4">Voľné</td></tr>
+          <tr><th scope="row">18:00</th></tr>
+          <tr><th scope="row">19:00</th></tr>
+          <tr><th scope="row">20:00</th></tr>
+        </tbody>
+      </table>
+    </div>
+    <ul class="legend" aria-label="Legenda">
+      <li data-type="lecture">Prednáška</li><li data-type="exercise">Cvičenie</li><li data-type="pe">Telesná kultúra</li>
+    </ul>
+    <h2>Priebeh semestra</h2>
+    <progress id="semester-progress" class="bar bar--wide" value="0" max="100" aria-labelledby="semester-label"></progress>
+    <p id="semester-label">Počítam…</p>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <address>
+          Samuel Piteľ<br>
+          Bratislava, Slovensko<br>
+          E-mail: <a href="mailto:xpitels@stuba.sk">xpitels@stuba.sk</a><br>
+          Tel.: <a href="tel:+421900023456">+421 900 023 456</a>
+        </address>
+      <p>© 2026 Samuel Piteľ. Zdroje: ilustrácie vlastné, mapové podklady <a href="https://www.openstreetmap.org/copyright">© OpenStreetMap</a>, knižnica <a href="https://leafletjs.com/">Leaflet</a>, písmo <a href="https://fonts.google.com/specimen/Poppins">Poppins</a> (licencia OFL).</p>
+    </div>
+  </footer>
+</body>
+</html>

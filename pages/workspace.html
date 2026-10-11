@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pracovné prostredie | Samuel Piteľ</title>
+  <meta name="description" content="Môj pracovný stôl: klikni alebo prejdi myšou na predmety a zisti, ako pracujem.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pracovné prostredie | Samuel Piteľ">
+  <meta property="og:description" content="Môj pracovný stôl: klikni alebo prejdi myšou na predmety a zisti, ako pracujem.">
+  <meta property="og:image" content="../img/og.png">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="stylesheet" href="../css/styles.css">
+  <script src="../js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Preskočiť na obsah</a>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <svg class="logo" viewBox="0 0 48 48" role="img" aria-label="Monogram SP"><rect class="logo__bg" width="48" height="48" rx="10"/><text class="logo__text" x="24" y="31" text-anchor="middle">SP</text></svg>
+      <div>
+        <p class="site-title">Samuel Piteľ</p>
+        <p class="site-slogan">Študent aplikovanej informatiky, mám rád keď ráno nezvoní budík</p>
+      </div>
+    </div>
+  </header>
+  <nav class="nav" aria-label="Hlavné menu">
+    <div class="container">
+      <button type="button" class="nav__toggle" aria-expanded="false" aria-controls="menu" aria-label="Menu"><span class="nav__bars" aria-hidden="true"></span></button>
+      <ul class="nav__list" id="menu">
+        <li><a class="nav__link" href="../index.html">Profil</a></li>
+        <li><a class="nav__link" href="cv.html">Životopis</a></li>
+        <li><a class="nav__link nav__link--active" href="workspace.html" aria-current="page">Pracovné prostredie</a></li>
+        <li><a class="nav__link" href="schedule.html">Rozvrh</a></li>
+        <li><a class="nav__link" href="map.html">Mapa</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main id="main" class="container">
+    <h1>Ako pracujem</h1>
+    <section>
+      <h2>Môj pracovný stôl</h2>
+      <p>Toto je môj pracovný stôl, kde pracujem. Prejdi myšou na označené miesta a zistíš niečo viac.</p>
+      <div class="workspace">
+        <img class="workspace__img" src="../img/workspace.jpg" alt="Fotografia môjho pracovného stola: notebook MSI, monitor Acer, modrá mechanická klávesnica, myš, figúrky a model auta" width="1600" height="1200" loading="lazy">
+        <div class="hotspots" id="hotspots"></div>
+      </div>
+      <noscript><p>Interaktívne popisy predmetov potrebujú zapnutý JavaScript. Na stole mám monitor, notebook, klávesnicu, myš, figúrky a model auta.</p></noscript>
+      <p class="source">Fotografia: vlastná, autor Samuel Piteľ.</p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <address>
+          Samuel Piteľ<br>
+          Bratislava, Slovensko<br>
+          E-mail: <a href="mailto:xpitels@stuba.sk">xpitels@stuba.sk</a><br>
+          Tel.: <a href="tel:+421900023456">+421 900 023 456</a>
+        </address>
+      <p>© 2026 Samuel Piteľ. Zdroje: ilustrácie vlastné, mapové podklady <a href="https://www.openstreetmap.org/copyright">© OpenStreetMap</a>, knižnica <a href="https://leafletjs.com/">Leaflet</a>, písmo <a href="https://fonts.google.com/specimen/Poppins">Poppins</a> (licencia OFL).</p>
+    </div>
+  </footer>
+</body>
+</html>
