@@ -1,7 +1,7 @@
 # WEBTE1 Zadanie č. 1: Moja online vizitka
 
 **Autor:** Samuel Piteľ, pondelok 9:00-10:50
-**Web na školskom serveri:** (doplň odkaz)
+**Web na školskom serveri:** https://webte1.fei.stuba.sk/~xpitels/Z1_Pite%c4%be/index.html
 
 Osobná vizitka z piatich podstránok: profil, životopis, interaktívny pracovný stôl (hotspoty len v CSS), rozvrh s dynamickým zvýraznením aktuálnej hodiny a filtrami, a interaktívna mapa s výpočtom vzdialenosti (Haversinov vzorec) a ukladaním bodov do localStorage.
 
